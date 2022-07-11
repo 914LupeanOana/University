@@ -1,0 +1,5 @@
+/Users/oanalupean/Documents/GitHub/t3-914LupeanOana/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/oanalupean/Documents/GitHub/t3-914LupeanOana/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/oanalupean/Documents/GitHub/t3-914LupeanOana/cmake-build-debug/CMakeFiles/untitled6.dir
+/Users/oanalupean/Documents/GitHub/t3-914LupeanOana/cmake-build-debug/CMakeFiles/untitled6_autogen_timestamp_deps.dir
+/Users/oanalupean/Documents/GitHub/t3-914LupeanOana/cmake-build-debug/CMakeFiles/untitled6_autogen.dir
