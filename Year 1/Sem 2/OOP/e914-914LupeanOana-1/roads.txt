@@ -1,0 +1,2 @@
+good,Oana,46,51,no
+bad,Maria,88,98,yes
