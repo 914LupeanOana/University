@@ -1,0 +1,1 @@
+15.ADT SortedList –using a BST with linked representation with dynamic allocation. Every node of the BST will retain the number of elements to the left of the node as well.
