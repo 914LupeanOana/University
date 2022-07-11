@@ -1,0 +1,65 @@
+
+Write a c program that recives as command line arguments as many files containig random text.
+ For each such file the program will create a thread. Each thread will recive as argument a file. All threads will
+ have access to 2 global variables. Each thread will count the letter and the digits from the file it recived as argument
+ and will add each of these 2 values to the global variables mentioned earlier. The threads must be dynamically allocated in memory. 
+The access to the global variables must be efficiently synchronized using mutex variables 
+(putting a mutex_lock at the begnnig of the thread and mutex_unlock at the end of the thread IS NOT EFFICIENT SYNCHRONIZATION)
+ NOTE: When you compile use the -pthread obtion.
+ The source file must be compiled using gcc with -Wall -g options WITHOUT WARNINGS OR SYNTAX ERRORS!!! 
+Memory leaks and zombie processes are not allowed.
+#include <stdlib.h>
+#include <stdio.h>
+#include <pthread.h>
+int litere;
+int cifre;
+typedef struct{
+char*nume_fisier;
+}ceva;
+pthread_mutex_t m;
+void *f(void *a){
+char*nume= (*(ceva*)a).nume_fisier;
+FILE *f=fopen(nume,"r");
+char citit;
+while(fscanf(f,"%c",&citit)!=EOF)
+{
+if(citit >='0' && citit <='9')
+ {
+    pthread_mutex_lock(&m);
+        cifre++;
+    pthread_mutex_unlock(&m);
+ }
+if(citit >='a' && citit<='z')
+{
+ pthread_mutex_lock(&m);
+        litere++;
+    pthread_mutex_unlock(&m);
+
+}
+
+}
+free(a);
+fclose(f);
+return NULL;
+}
+int main( int argc, char **argv)
+{
+int i;
+pthread_t *t= malloc((argc-1)*sizeof(pthread_t));
+pthread_mutex_init(&m,NULL);
+for(i=0;i<argc-1;i++)
+{
+ ceva *s=malloc(sizeof(ceva));
+ s->nume_fisier=argv[i+1];
+ pthread_create(&t[i],NULL,f, (void *)s);
+}
+for(i=0;i<argc-1;i++)
+{
+pthread_join(t[i],NULL);
+}
+printf("Nr de cifre: %d \n ", cifre);
+printf("Nr de litere: %d \n ",litere);
+free(t);
+pthread_mutex_destroy(&m);
+return 0;
+}
