@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+int a,b;
+
+typedef struct{
+    int x,y;
+}ceva
+
+pthread_mutex_t m;
+
+void* f(void* f_thread){
+ int x = (*(ceva*)f_thread).x;
+ int y = (*(ceva*)f_thread).y;
+
+ int contor=0;
+
+ while(contor<y){
+        pthread_mutex_lock(&m);
+	a += b;
+        a += x;
+        b = x;
+	pthread_mutex_unlock(&m);
+        conotr +=1;}
+
+free(f_thread);
+return NULL;
+ }
+int main(int argc, char **argv){
+
+        pthread_t *t = malloc((argc-1)/2*sizeof(prhread_t));
+
+        int i;
+	pthreads_mutex_init($m, NULL);
+
+        for(i=0;i<argc-1;i+=2){
+        ceva *s= malloc(sizeof(ceva));
+        s->x = atoi(argv[i+1]);
+        s->y = atoi(argv[i+2]);
+        pthread_create(&t[i/2],NULL,f,(void*),s);
+        }
+
+	for(i=1;i<argc-1;i+=2)
+        {	pthread_join(t[i/2],NULL);
+         }
+
+	printf("%d\n", a);
+        printf("%d\n", b);
+        free(t);
+        pthread_mutex_destroy(&m);
+        return 0;
+}
