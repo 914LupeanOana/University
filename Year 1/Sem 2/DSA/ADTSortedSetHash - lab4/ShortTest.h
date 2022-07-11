@@ -1,0 +1,10 @@
+//
+// Created by Oana Lupean on 09.05.2022.
+//
+
+#ifndef ADTSORTEDSETHASH_SHORTTEST_H
+#define ADTSORTEDSETHASH_SHORTTEST_H
+
+void testAll();
+
+#endif //ADTSORTEDSETHASH_SHORTTEST_H
