@@ -1,0 +1,5 @@
+/Users/oanalupean/CLionProjects/a11-12/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/oanalupean/CLionProjects/a11-12/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/oanalupean/CLionProjects/a11-12/cmake-build-debug/CMakeFiles/a11_12.dir
+/Users/oanalupean/CLionProjects/a11-12/cmake-build-debug/CMakeFiles/a11_12_autogen_timestamp_deps.dir
+/Users/oanalupean/CLionProjects/a11-12/cmake-build-debug/CMakeFiles/a11_12_autogen.dir

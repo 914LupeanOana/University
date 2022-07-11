@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>csv_html_gui</class>
+ <widget class="QWidget" name="csv_html_gui">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>216</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>csv_html_gui</string>
+  </property>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>545</width>
+     <height>102</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <family>Tempus Sans ITC</family>
+        <pointsize>20</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string> CHOOSE THE FILE TYPE:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="csvButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>CSV</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="htmlButton">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>HTML</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
