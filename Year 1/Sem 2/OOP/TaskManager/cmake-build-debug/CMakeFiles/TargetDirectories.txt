@@ -1,0 +1,5 @@
+/Users/oanalupean/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/oanalupean/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/oanalupean/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/TaskManager.dir
+/Users/oanalupean/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/TaskManager_autogen_timestamp_deps.dir
+/Users/oanalupean/CLionProjects/TaskManager/cmake-build-debug/CMakeFiles/TaskManager_autogen.dir

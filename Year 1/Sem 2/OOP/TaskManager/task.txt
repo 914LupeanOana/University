@@ -1,0 +1,5 @@
+Clean,open,
+Swim,in_progress,3
+Something,closed,5
+Idk,open,
+

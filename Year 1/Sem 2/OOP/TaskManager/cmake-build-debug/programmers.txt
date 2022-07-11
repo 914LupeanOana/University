@@ -1,0 +1,3 @@
+Oana,1
+Maria,3
+Deni,2
