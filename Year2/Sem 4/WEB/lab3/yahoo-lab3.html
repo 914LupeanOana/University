@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.navbar-flex-middle
+{
+  align-items: center;
+  display: flex;
+}
+
+.navbar-header
+{
+  background: white;
+  height: 1.5rem;
+  padding: 1.5rem;
+  position: relative;
+
+}
+
+.navbar-text
+{
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #4B0082 ;
+}
+
+.navbar-text-1
+{
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: black ;
+}
+
+.navbar-text-secondary
+{
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.navbar-button-gap
+{
+  padding: 0 0.3rem;
+}
+
+.navbar-button-gap-1
+{
+  padding: 0px 5px 0px 20px;
+}
+
+.navbar-button-gap-0
+{
+  padding: 0px 0px 0px 0px;
+}
+
+.navbar-button-gap-00
+{
+  padding: 0px 0px 0px 5px;
+}
+
+.navbar-relative
+{
+  position: relative;
+}
+
+
+
+.navbar-logo
+{
+  flex-shrink: 0;
+  padding-right: 0.1rem;
+}
+
+
+.navbar-button
+{
+  position: relative;
+    align-items: center;
+    border: none;
+    display: inline-flex;
+    min-width: 5rem;
+    padding: 0 0.9rem;
+    justify-content: center;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.navbar-button-small
+{
+  position: relative;
+    align-items: center;
+    border: none;
+    display: inline-flex;
+    min-width: 3rem;
+    padding: 0 0.9rem;
+    justify-content: center;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+
+.navbar-button-ghost
+{
+  color: #5624d0;
+  background-color: transparent;
+  min-width: auto;
+}
+
+.navbar-button-secondary
+{
+  color: black;
+  background-color: transparent;
+  border: 1px solid #4B0082;
+  border-width: medium;
+  border-radius: 1000px;
+  height: 2.5rem;
+
+}
+
+.navbar-button-primary
+{
+  color: white;
+  background-color: black;
+  height: 2.5rem;
+}
+
+.navbar-dropdown-button
+{
+  margin: 0.7rem 0;
+  font-weight: 200;
+    font-size: 0.9rem;
+}
+
+.navbar-search
+{
+    flex-grow: 1;
+    height: 2.8rem;
+    border: 1px solid #6495ED;
+    background-color: #f7f9fa;
+    margin: 1.2rem 1.2rem
+    position: relative;
+    max-width: none;
+}
+
+.navbar-search-form
+{
+  display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: row;
+}
+
+.navbar-search-input
+
+{
+  border-radius: 0;
+  border: 0;
+  flex: 1;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+
+}
+
+.container-main-black
+{
+  background-color:  #A9A9A9;
+  border-radius: 15px;
+  margin-left: 15px;
+  max-width: 900px;
+  margin-bottom: 20px
+  
+
+}
+
+.container-main
+{
+  border-radius: 15px;
+  margin-left: 15px;
+  max-width: 900px;
+  
+
+}
+
+.container-div-primary
+{
+
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0rem;
+  margin-bottom: 0rem;
+  overflow: auto;
+  margin-left: 0px;
+  max-width: 800px;
+
+}
+
+.container-div-photo{
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0rem;
+  margin-bottom: 0rem;
+  overflow: auto;
+  margin-left: 0px;
+  max-width: 160px;
+}
+
+.container-header-text
+{
+  color: #cec0fc;
+  font-weight: 1000;
+    font-size: 1rem;
+    text-decoration-line: none;
+    margin-right: 1rem;
+
+
+}
+
+.container-title-text
+{
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 700;
+  margin-top: 0.7rem;
+  letter-spacing: 0.01rem;
+  margin-bottom: 0.2rem;
+  padding-left:15px
+}
+
+.container-subtitle-text
+{
+  font-size: 15px;
+  color: black;
+  font-weight: 50;
+  margin-top: 0.5rem;
+  padding-left: 18px
+}
+
+.container-info-text
+{
+  color: black;
+  font-size: 12px;
+  margin-top: 0.6rem; 
+  margin-right: 2rem;
+  font-weight: bold;
+  padding-left: 18px
+}
+
+.container-photo-text{
+  color:black;
+  font-size: 13px;
+  margin-top: 0.6rem;
+  margin-right: 2rem;
+  font-weight: bold;
+  padding-left: 0px;
+}
+
+.container-photo-text-2{
+  color:black;
+  font-size: 13px;
+  margin-top: -30px;
+  margin-right: 2rem;
+  font-weight: bold;
+  padding-left: 190px;
+}
+
+.container-photo-text-3{
+  color:black;
+  font-size: 13px;
+  margin-top: -30px;
+  margin-right: 2rem;
+  font-weight: bold;
+  padding-left: 375px;
+}
+
+.container-photo-text-4{
+  color:black;
+  font-size: 13px;
+  margin-top: -30px;
+  margin-right: 2rem;
+  font-weight: bold;
+  padding-left: 555px;
+}
+
+.container-photo-text-5{
+  color:black;
+  font-size: 13px;
+  margin-top: -30px;
+  margin-right: 2rem;
+  font-weight: bold;
+  padding-left: 742px;
+  
+}
+
+.container-sidebar
+{
+  display: block;
+  position: absolute;
+  min-width: 35rem;
+  top: 6.6rem;
+  margin-left: 60rem;
+  min-height: 35rem;
+}
+
+.sidebar
+{
+  width: 21rem;
+  z-index: 1;
+  background-color: white;
+  min-height: 43rem;
+
+}
+
+.sidebar-content
+{
+  margin-top: 1.4rem;
+  margin-left: 1.5rem;
+}
+
+
+
+.sidebar-text
+{
+  margin-left: 1.2rem;
+  display: block;
+  margin-top: 2rem;
+
+}
+
+.sidebar-list
+{
+  margin-left: 1.2rem;
+  display: block;
+  margin-top: 0.4rem;
+  font-weight: 525;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.sub-container
+{
+  margin-left:13.5rem ;
+  border: 1px solid black;
+  display: block;
+  min-width: 20rem;
+  min-height: 20rem;
+  position: absolute;
+  width: 40rem;
+  background-color: transparent;
+  height: 40rem;
+  z-index: 2;
+  margin-top: 2.5rem;
+  padding: 24px;
+}
+
+.sub-container-text
+{
+  margin: 0 0rem 1.6rem;
+      font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1.6rem;
+}
+
+.sub-container-grid
+{
+  display: grid;
+  grid-template-columns: auto auto ;
+
+}
+.grid-item
+{
+  font-size: 1.1rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.img{
+
+display: flex;
+
+gap: 25px;
+
+}
+
+.rectangle {
+  height: 20px;
+  width: 10px;
+  background-color:  #6600c7;
+  border-radius: 5px;
+  margin-left: 13px;
+  margin-top: 30px
+
+}
+
+.container-story-text
+{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 700;
+  margin-top: -1.3rem;
+  letter-spacing: 0.01rem;
+  margin-bottom: 0.2rem;
+  padding-left:40px
+}
+
+.container-trending-text
+{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 700;
+  margin-top: -1.3rem;
+  letter-spacing: 0.01rem;
+  margin-bottom: 0.2rem;
+  padding-left:40px
+}
+
+ol li::marker {
+    color: #6600c7;
+    font-weight: 700;
+}
+
+
+.right{
+  text-align: right;
+  font-size:1rem;
+  font-weight:550;
+  margin-top:-1.5rem;
+}
+
+.right1{
+  text-align: right;
+  font-size:0.7rem;
+  font-weight:550;
+  margin-top:-0.5rem;
+}
+
+.see-more{
+  color:#1E90FF;
+  font-size:0.8rem;
+  font-weight:700;
+  margin-left:1.2rem;
+  margin-top:-1rem;
+}
+
+.sidebar-button
+{
+    position: absolute;
+    border: none;
+    border-radius: 15px;
+    display: inline-flex;
+    background-color: #ddd;
+    min-width: 5rem;  
+    min-height: 1.1rem;
+    justify-content: center;
+    vertical-align: bottom;
+    white-space: nowrap;
+    top: 410px;
+}
+
+.rectangle1 {
+  height: 5px;
+  width: 40px;
+  background-color:  #6600c7;
+  margin-left: 112px;
+  margin-top: -16.5px;
+}
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+</head>
+<body>
+	<div class="navbar-flex-middle navbar-header navbar-text">
+    		<a href="/" class="navbar-flex-middle navbar-logo">
+                    <img src="yahoo.png" width="170px" height="40" >
+		</a>
+         <div class="navbar-search">
+    	   <form class="navbar-search-form">
+     		 <input type="hidden" name="sq">
+     		 <input type="text" name="search" placeholder=" " class="navbar-search-input">
+      		<button type="submit " tabindex="-1" style="background-color: transparent; border: 0;">
+        <img src="lupa.png" width="70" height="40" style="background-color: transparent; fill: curentColor;">
+     		 </button>
+   	 </form>
+	</div>
+  <nav class="navbar-button-gap-1 navbar-relative">
+    <button type="button" tabindex="0" class=" navbar-button  navbar-button-secondary">
+    <span class="navbar-text"> Sign in</span>
+  </button>
+</nav>
+	<nav class="navbar-button-gap navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <img src="notificare.png" width="60" height="50">
+  </button>
+</nav>
+	<nav class="navbar-button-gap-00 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <img src="mail1.png" width="50" height="50">
+  </button>
+</nav>
+<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">Mail</span>
+  </button>
+</nav>
+</div>
+	<div class="navbar-flex-middle navbar-header navbar-text">
+    		<a href="/" class="navbar-flex-middle navbar-logo">
+                    <img src="mail.png" width="40px" height="40" >
+		</a>
+         <nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">Mail</span>
+  </button>
+</nav>
+	<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">News</span>
+  </button>
+</nav>
+<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">Finance</span>
+  </button>
+</nav>
+<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">Sports</span>
+  </button>
+</nav>
+<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">Entertainment</span>
+  </button>
+</nav>
+<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">Life</span>
+  </button>
+</nav>
+<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">Shopping</span>
+  </button>
+</nav>
+<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">Yahoo Plus</span>
+  </button>
+</nav>
+<nav class="navbar-button-gap-0 navbar-relative">
+    <button type="button" tabindex="0" class="navbar-button navbar-button-ghost navbar-dropdown-button">
+    <span class="navbar-text-1">More...</span>
+  </button>
+</nav>
+</div>
+
+<div class="container-main-black">
+
+ <div class="container-div-primary container-subtitle-text">
+	<img src="p1.png" width="500" height="250" style="float:left">
+	<div>
+	 <div  class="container-div-primary">
+    <h1 class="container-title-text"> Nashville school massacre was elaborately planned
+</h1>
+  </div>
+	  <div class="container-div-primary container-subtitle-text">
+        The former student who killed three children and three adults at a private Christian school had drawn a detailed map and conducted surveillance of the building, police said.
+    </div>
+	<div class="container-div-primary container-info-text">
+	'We have a manifesto'>>
+	</div>
+
+ </div>
+
+</div>
+</div>
+
+<div class="container-main">
+  
+	<div class="img">
+  <img src="p2.png" width="160" height="90" style="float:left" margin="0px 0px 0px 18px">
+  <img src="p3.png" width="160" height="90" style="float:left" margin="0px 0px 0px 18px">
+  <img src="p4.png" width="160" height="90" style="float:left" margin="0px 0px 0px 18px">
+  <img src="p5.png" width="160" height="90" style="float:left" margin="0px 0px 0px 18px">
+  <img src="p6.png" width="160" height="90"  margin="0px 0px 0px 18px">
+	</div>
+<div>
+  <div class="container-div-photo container-photo-text">
+	Melissa Joan Hart helped kids escape Tenn. shooting
+	</div>
+  <div class="container-div-photo container-photo-text-2">
+	Amazon warns users about 'frequently returned' items
+	</div>	
+  <div class="container-div-photo container-photo-text-3">
+	LSU's 'Bayou Barbie' has more NIL deals than anyone
+	</div>	
+  <div class="container-div-photo container-photo-text-4">
+	Rep. Marjorie Taylor Greene's Twitter account...
+	</div>	
+  <div class="container-div-photo container-photo-text-5">
+         Obamacare win in North Carolina
+	</div>	
+</div>
+</div>
+<div>
+<div class="rectangle"></div>
+<div>
+	<div class="container-story-text">
+		Stories for you
+		
+	</div>
+	<img src="story.png" width="275" height="150" style="margin-left:10px; margin-top:20px; float:left;"> 
+	<div style="color:blue; font-weight: 525; margin-top:30px; margin-left:310px; font-size: 0.8rem;" >
+	Politics
+	</div>
+	<div style="color:grey; font-weight: 400; margin-top:-15px; margin-left:370px; font-size: 0.8rem;" >
+	HuffPost
+	</div>
+	<div style="color:black; font-weight: 600; margin-top:5px; margin-left:310px; font-size: 1.4rem;" >
+	Trump's Ugly New Boast About Dictators Backfires Spectaculary
+	</div>
+	<div style="color:black; font-weight: 300; margin-top:5px; margin-left:310px; font-size: 1rem;" >
+	"Tells you all you need to know," Democratic Rep. Brendan Boyle responded on Twitter.
+	</div>
+</div>
+</div>
+
+
+
+
+<div class="container-sidebar">
+      <div class="sidebar">
+        <div class="rectangle"></div>
+		<div>
+			<div class="container-trending-text">
+			Trending Now
+			</div>
+		</div>
+
+
+        <ul class="sidebar-list">
+	 <ol>
+          
+          <li style="margin-left: -4.3rem; margin-top:1.5rem;">Nashville School Sh...</li>
+          
+          <li style="margin-left: -4.3rem;">Donald Trump</li>
+          
+          <li style="margin-left: -4.3rem;">Aaron Rodgers</li>
+          
+          <li style="margin-left: -4.3rem;">Gwyneth Paltrow T...</li>
+          
+          <li style="margin-left: -4.3rem;">Ukraine War Updat...</li>
+
+          <li style="margin-left: 6rem; margin-top: -7.9rem;">Emily Ratajkowski</li>
+
+          <li style="margin-left: 6rem;">Huntsville Shooting</li>
+
+          <li style="margin-left: 6rem;">Yankees</li>
+
+          <li style="margin-left: 6rem;">Chocolate Factory...</li>
+
+          <li style="margin-left: 6rem;">Golden State Warr...</li>
+	</ol>
+          
+        </ul>
+
+	<div class="rectangle"></div>
+		<div>
+			<div class="container-trending-text">
+			Weather
+			</div>
+			<div class="right">
+			Cluj
+			<img src="locatie.png" width="22" height="20" style="float:right; margin-top:-0.1rem;">
+			</div>
+		</div>
+
+	<ul style="list-style-type:none;">
+  		<li style="margin-left:-1rem; font-weight:550; font-size:0.8rem;">Today</li>
+  		<li style="margin-left:4.7rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem;">Thu</li>
+  		<li style="margin-left:10rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem;">Fri</li>
+		<li style="margin-left:14.7rem; margin-top:-1rem; font-weight:550; font-size:0.8rem;">Sat</li>
+	</ul> 
+	<img src="vreme.png" width="300" height="50" style="margin-left:1.7rem; margin-top:-0.3rem">
+	<ul style="list-style-type:none;">
+  		<li style="margin-left:-1rem; font-weight:550; font-size:0.8rem; margin-top:-0.9rem;">40<span>&#176;</span></li>
+  		<li style="margin-left:4.7rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem;">53<span>&#176;</span></li>
+  		<li style="margin-left:10rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem;">58<span>&#176;</span></li>
+		<li style="margin-left:14.7rem; margin-top:-1rem; font-weight:550; font-size:0.8rem;">51<span>&#176;</span></li>
+	</ul> 
+
+	<ul style="list-style-type:none; color:#778899">
+  		<li style="margin-left:0.5rem; font-weight:550; font-size:0.8rem; margin-top:-2rem;">26<span>&#176;</span></li>
+  		<li style="margin-left:6.2rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem;">41<span>&#176;</span></li>
+  		<li style="margin-left:11.5rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem;">43<span>&#176;</span></li>
+		<li style="margin-left:16.2rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem;">40<span>&#176;</span></li>
+	</ul> 
+		<div class="see-more">
+		See More >>
+		</div>
+
+		<div class="right1">
+			<img src="vreme1.png" width="17" height="15" style="float:left; margin-left:15.75rem">
+			AccuWeather
+			</div>
+
+		<div class="rectangle"></div>
+		<div>
+			<div class="container-trending-text">
+			Scoreboard
+			</div>
+		</div>
+		<button class="sidebar-button" style="color:#1c1d1f; font-size: 0.8rem; font-weight: 700; word-spacing: -0.1rem; margin-left: 250px;" > Trending</button>
+		<div style=" margin-left:332px; margin-top: -1.5rem;">
+			^
+		</div>
+		<div style=" margin-left:332px; margin-top: -0.8rem;">
+			v
+		</div>
+	<ul style="list-style-type:none;">
+  		<li style="margin-left:-1rem; font-weight:550; font-size:0.8rem;">Yesterday</li>
+  		<li style="margin-left:4.7rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem; color:#6600c7;">Today</li>
+  		<li style="margin-left:9rem; margin-top:-0.9rem; font-weight:550; font-size:0.8rem;">Tommorow</li>
+		
+	</ul> 
+		<div class="rectangle1"></div>
+		<img src="board1.png" width="135" height="57" style="margin-top:10px; margin-left: 18px;">
+	
+		
+
+      </div>
+   </div>
+  

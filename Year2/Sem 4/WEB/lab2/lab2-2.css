@@ -1,0 +1,19 @@
+/* Set up the initial styles for the div */
+      .my-div {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 1s, left 1s;
+      }
+
+/* Add a hover style for the div */
+      .my-div:hover {
+        transform: rotate(360deg);
+        left: calc(100% - 100px);
+	border-radius: 50px;
+	background-color:green;
+	transition: all 1s ease-in-out;
+	}
